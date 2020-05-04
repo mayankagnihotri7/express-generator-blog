@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Article</title>
+</head>
+<body>
+    <form action="/articles" method="post">
+        <input type="text" name="title" value="<%= data.title %>">
+        <input type="text" name="description" value="<%= data.description %>">
+        <input type="text" name="author" value="<%= data.author %>">
+        <button type="submit">Update</button>
+    </form>
+    <a href="/articles/home">Home</a>
+</body>
+</html>

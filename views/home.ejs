@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles List</title>
+</head>
+<body>
+    <h1>Articles List:</h1>
+    <% articles.forEach(article => { %>
+        <h1><a href="/articles/<%= article.id %>"><%= article.title %></a></h1>
+   <% }) %>
+    <a href="/articles/new">Create</a>
+</body>
+</html>
